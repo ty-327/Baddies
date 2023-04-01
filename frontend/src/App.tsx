@@ -24,7 +24,6 @@ function Navbar() {
   );
 }
 
-function App() {
   return (
     <Router>
       <Navbar />
