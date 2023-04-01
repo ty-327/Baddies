@@ -1,14 +1,17 @@
 function HomePage(props: any) {
   return (
     <>
-      <div className="row">
-        <div className="col-2">
-          <img src="./JoelHilton.jpg" alt="JoelHilton" />
+      <div className="row align-items-center py-3">
+        <div className="col-2 ps-3">
+          <img
+            src="./JoelHilton.jpg"
+            alt="JoelHilton"
+            className="img-fluid rounded-circle"
+          />
         </div>
-      </div>
-
-      <div className="col align-self-center text-start">
-        <h1>Welcome to Joel's Movie Collection </h1>
+        <div className="col-10">
+          <h1 className="fw-bold">Welcome to Joel's Movie Collection</h1>
+        </div>
       </div>
     </>
   );

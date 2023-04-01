@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import data from './MovieDataSample.json';
+import data from './MovieData.json';
 
-const mds = data.MovieDataSampleList;
+const movieData = data.MovieData;
 
 function MovieList() {
-  const [listOMovies, setListOMovies] = useState(mds);
+  const [listOMovies, setListOMovies] = useState(movieData);
 
   const addMovie = () => {
     setListOMovies([
-      ...mds,
+      ...movieData,
       {
         Category: 'Action/Adventure',
         Title: 'Batman Forever',
@@ -21,37 +21,39 @@ function MovieList() {
 
   return (
     <>
-      <div>
+      <div className="p-3">
         <h3>Joel Hilton's Movie Collection</h3>
-      </div>
-      <div>
-        <table className="table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Year</th>
-              <th>Director</th>
-              <th>Rating</th>
-              <th>Category</th>
-            </tr>
-          </thead>
-          <tbody>
-            {listOMovies.map((m) => (
+        <div>
+          <table className="table table-bordered table-striped">
+            <thead className="table-light">
               <tr>
-                <td>{m.Title}</td>
-                <td>{m.Year}</td>
-                <td>{m.Director}</td>
-                <td>{m.Rating}</td>
-                <td>{m.Category}</td>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Director</th>
+                <th>Rating</th>
+                <th>Category</th>
+                <th>Edited</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+            </thead>
+            <tbody>
+              {listOMovies.map((m, index) => (
+                <tr className={index % 2 === 0 ? 'table-light' : ''}>
+                  <td>{m.Title}</td>
+                  <td>{m.Year}</td>
+                  <td>{m.Director}</td>
+                  <td>{m.Rating}</td>
+                  <td>{m.Category}</td>
+                  <td>{m.Edited}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
-      <button className="btn btn-primary" onClick={addMovie}>
-        Add Movie
-      </button>
+        <button className="btn btn-primary" onClick={addMovie}>
+          Add Movie
+        </button>
+      </div>
     </>
   );
 }
