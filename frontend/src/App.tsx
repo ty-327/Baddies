@@ -5,7 +5,7 @@ import HomePage from './HomePage';
 import MovieList from './Movies';
 import Podcasts from './Podcasts';
 import Navbar from './Navbar';
-import MovieList2 from './movie/MovieList';
+import MovieAPI from './movie/MovieAPI';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 function App() {
@@ -46,8 +46,8 @@ function App() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/movie/MovieList">
-                    Movies2
+                  <Link className="nav-link" to="/movie/MovieAPI">
+                    MoviesAPI
                   </Link>
                 </li>
               </ul>
@@ -58,7 +58,7 @@ function App() {
           <Route path="/" Component={HomePage} />
           <Route path="/podcasts" Component={Podcasts} />
           <Route path="/movies" Component={MovieList} />
-          <Route path="/movie/MovieList" Component={MovieList2} />
+          <Route path="/movie/MovieAPI" Component={MovieAPI} />
         </Routes>
       </div>
     </>

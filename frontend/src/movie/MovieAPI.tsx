@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Movie } from '../types/movie';
 
-function MovieList2() {
+function MovieAPI() {
   const [movieData, setMovieData] = useState<Movie[]>([]);
 
   useEffect(() => {
@@ -48,4 +48,4 @@ function MovieList2() {
   );
 }
 
-export default MovieList2;
+export default MovieAPI;

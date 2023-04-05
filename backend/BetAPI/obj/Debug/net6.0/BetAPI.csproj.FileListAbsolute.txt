@@ -22,6 +22,7 @@ C:\Users\tyisb\source\repos\Baddies\backend\BetAPI\bin\Debug\net6.0\SQLitePCLRaw
 C:\Users\tyisb\source\repos\Baddies\backend\BetAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\tyisb\source\repos\Baddies\backend\BetAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\tyisb\source\repos\Baddies\backend\BetAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\tyisb\source\repos\Baddies\backend\BetAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\tyisb\source\repos\Baddies\backend\BetAPI\bin\Debug\net6.0\runtimes\alpine-arm\native\libe_sqlite3.so
 C:\Users\tyisb\source\repos\Baddies\backend\BetAPI\bin\Debug\net6.0\runtimes\alpine-arm64\native\libe_sqlite3.so
 C:\Users\tyisb\source\repos\Baddies\backend\BetAPI\bin\Debug\net6.0\runtimes\alpine-x64\native\libe_sqlite3.so
@@ -65,4 +66,3 @@ C:\Users\tyisb\source\repos\Baddies\backend\BetAPI\obj\Debug\net6.0\refint\BetAP
 C:\Users\tyisb\source\repos\Baddies\backend\BetAPI\obj\Debug\net6.0\BetAPI.pdb
 C:\Users\tyisb\source\repos\Baddies\backend\BetAPI\obj\Debug\net6.0\BetAPI.genruntimeconfig.cache
 C:\Users\tyisb\source\repos\Baddies\backend\BetAPI\obj\Debug\net6.0\ref\BetAPI.dll
-C:\Users\tyisb\source\repos\Baddies\backend\BetAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
